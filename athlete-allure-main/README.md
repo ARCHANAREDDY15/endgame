@@ -1,73 +1,207 @@
-# Welcome to your Lovable project
+# Athlete Allure - Social Media Platform for Athletes
 
-## Project info
+A modern, full-stack social media platform specifically designed for athletes to share their sports moments, connect with teammates, and build their athletic community. Built with cutting-edge technologies and featuring a premium dark theme with neon accents.
 
-**URL**: https://lovable.dev/projects/46dd08d8-6efa-43d9-8362-327c57fd60d8
+## 🚀 Features
 
-## How can I edit this code?
+### Core Social Media Features
+- **User Authentication**: Secure signup/login with Supabase Auth
+- **Post Creation**: Upload multiple images with captions
+- **Real-time Interactions**: Like and comment on posts instantly
+- **Follow System**: Connect with other athletes and build your network
+- **Tagging System**: Tag teammates, sports, and achievements with hashtags
+- **Notifications**: Real-time notifications for likes and interactions
 
-There are several ways of editing your application.
+### Athlete-Focused Features
+- **Sport Categories**: Basketball, Soccer, Tennis, and more
+- **Profile Management**: Custom profiles with bio, sport, and stats
+- **Leaderboard**: Track athletic achievements and rankings
+- **Search Functionality**: Find athletes and posts by tags or usernames
 
-**Use Lovable**
+### Premium UI/UX
+- **Dark Theme**: Modern dark interface with neon cyan/purple accents
+- **Glass Morphism**: Elegant glass-like effects and animations
+- **Responsive Design**: Optimized for mobile and desktop
+- **Smooth Animations**: Particle effects and hover transitions
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/46dd08d8-6efa-43d9-8362-327c57fd60d8) and start prompting.
+## 🛠️ Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+### Frontend
+- **React 18** - Modern React with hooks and functional components
+- **TypeScript** - Type-safe development
+- **Vite** - Fast build tool and development server
+- **Tailwind CSS** - Utility-first CSS framework
+- **shadcn/ui** - Beautiful, accessible UI components
+- **React Router** - Client-side routing
+- **React Query** - Data fetching and state management
 
-**Use your preferred IDE**
+### Backend & Database
+- **Supabase** - Backend-as-a-Service with PostgreSQL
+- **Real-time Subscriptions** - Live updates for likes, comments, notifications
+- **Supabase Storage** - File uploads and media management
+- **Row Level Security** - Database-level security policies
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Development Tools
+- **ESLint** - Code linting
+- **Prettier** - Code formatting
+- **Git** - Version control
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 📁 Project Structure
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+athlete-allure/
+├── src/
+│   ├── components/          # Reusable UI components
+│   │   ├── ui/             # shadcn/ui components
+│   │   ├── Navbar.tsx      # Navigation component
+│   │   └── PostCard.tsx    # Post display component
+│   ├── pages/              # Page components
+│   │   ├── Auth.tsx        # Authentication page
+│   │   ├── Feed.tsx        # Main feed page
+│   │   ├── Profile.tsx     # User profile page
+│   │   ├── CreatePost.tsx  # Post creation page
+│   │   └── Notifications.tsx # Notifications page
+│   ├── integrations/       # External service integrations
+│   │   └── supabase/       # Supabase client and types
+│   ├── hooks/              # Custom React hooks
+│   └── lib/                # Utility functions
+├── supabase/
+│   ├── migrations/         # Database migrations
+│   └── config.toml        # Supabase configuration
+├── public/                 # Static assets
+└── package.json           # Dependencies and scripts
 ```
 
-**Edit a file directly in GitHub**
+## 🚀 Getting Started
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Prerequisites
+- Node.js (v18 or higher)
+- npm or yarn
+- Supabase account
 
-**Use GitHub Codespaces**
+### Installation
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/ARCHANAREDDY15/endgame.git
+   cd athlete-allure
+   ```
 
-## What technologies are used for this project?
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-This project is built with:
+3. **Environment Setup**
+   Create a `.env` file in the root directory:
+   ```env
+   VITE_SUPABASE_URL=your_supabase_url
+   VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+   ```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+4. **Database Setup**
+   ```bash
+   # Install Supabase CLI
+   npm install -g supabase
 
-## How can I deploy this project?
+   # Login to Supabase
+   supabase login
 
-Simply open [Lovable](https://lovable.dev/projects/46dd08d8-6efa-43d9-8362-327c57fd60d8) and click on Share -> Publish.
+   # Link your project
+   supabase link --project-ref your-project-ref
 
-## Can I connect a custom domain to my Lovable project?
+   # Push database migrations
+   npx supabase db push
+   ```
 
-Yes, you can!
+5. **Start the development server**
+   ```bash
+   npm run dev
+   ```
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+   The app will be available at `http://localhost:8080`
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## 📱 Usage
+
+### For Athletes
+1. **Sign Up**: Create your athlete profile with sport category
+2. **Create Posts**: Share your training sessions, game highlights, or achievements
+3. **Connect**: Follow teammates and other athletes in your sport
+4. **Engage**: Like and comment on posts from your athletic community
+5. **Tag**: Use hashtags to categorize your posts (#basketball, #championship, etc.)
+
+### Key Features Walkthrough
+- **Post Creation**: Click the "+" icon to create posts with multiple images
+- **Tagging**: Add up to 10 tags per post for better discoverability
+- **Real-time Feed**: See new posts and interactions instantly
+- **Profile Building**: Complete your athlete profile with stats and achievements
+
+## 🔧 Available Scripts
+
+```bash
+# Development
+npm run dev          # Start development server
+npm run build        # Build for production
+npm run preview      # Preview production build
+
+# Database
+npx supabase db push  # Push database migrations
+npx supabase db reset # Reset database
+
+# Code Quality
+npm run lint         # Run ESLint
+```
+
+## 🎨 Design System
+
+### Color Palette
+- **Primary**: Cyan (#00FFFF) and Purple (#8B5CF6) gradients
+- **Background**: Dark theme with subtle gradients
+- **Text**: White and gray variations for readability
+- **Accents**: Neon effects for interactive elements
+
+### Typography
+- **Font Family**: System fonts with fallbacks
+- **Sizes**: Responsive scaling from mobile to desktop
+- **Weights**: Regular, medium, semibold, and bold
+
+## 🔒 Security Features
+
+- **Row Level Security**: Database policies ensure users can only access their own data
+- **Authentication**: Secure JWT-based authentication with Supabase
+- **Input Validation**: Client and server-side validation
+- **File Upload Security**: Restricted file types and sizes
+
+## 📈 Performance Optimizations
+
+- **Code Splitting**: Lazy loading of routes and components
+- **Image Optimization**: Efficient image loading and caching
+- **Real-time Updates**: Optimized subscriptions for live features
+- **Caching**: React Query for efficient data fetching
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- **Supabase** for the amazing backend-as-a-service platform
+- **shadcn/ui** for beautiful, accessible components
+- **Tailwind CSS** for the utility-first CSS framework
+- **React** ecosystem for modern web development tools
+
+## 📞 Support
+
+For support, email archana@example.com or join our Discord community.
+
+---
+
+**Built with ❤️ for athletes, by athletes**
