@@ -1,4 +1,4 @@
-# Athlete Allure - Social Media Platform for Athletes
+# Endgame - Social Media Platform for Athletes
 
 A modern, full-stack social media platform specifically designed for athletes to share their sports moments, connect with teammates, and build their athletic community. Built with cutting-edge technologies and featuring a premium dark theme with neon accents.
 
