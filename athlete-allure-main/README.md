@@ -46,32 +46,6 @@ A modern, full-stack social media platform specifically designed for athletes to
 - **Prettier** - Code formatting
 - **Git** - Version control
 
-## 📁 Project Structure
-
-```
-athlete-allure/
-├── src/
-│   ├── components/          # Reusable UI components
-│   │   ├── ui/             # shadcn/ui components
-│   │   ├── Navbar.tsx      # Navigation component
-│   │   └── PostCard.tsx    # Post display component
-│   ├── pages/              # Page components
-│   │   ├── Auth.tsx        # Authentication page
-│   │   ├── Feed.tsx        # Main feed page
-│   │   ├── Profile.tsx     # User profile page
-│   │   ├── CreatePost.tsx  # Post creation page
-│   │   └── Notifications.tsx # Notifications page
-│   ├── integrations/       # External service integrations
-│   │   └── supabase/       # Supabase client and types
-│   ├── hooks/              # Custom React hooks
-│   └── lib/                # Utility functions
-├── supabase/
-│   ├── migrations/         # Database migrations
-│   └── config.toml        # Supabase configuration
-├── public/                 # Static assets
-└── package.json           # Dependencies and scripts
-```
-
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -120,21 +94,6 @@ athlete-allure/
    ```
 
    The app will be available at `http://localhost:8080`
-
-## 📱 Usage
-
-### For Athletes
-1. **Sign Up**: Create your athlete profile with sport category
-2. **Create Posts**: Share your training sessions, game highlights, or achievements
-3. **Connect**: Follow teammates and other athletes in your sport
-4. **Engage**: Like and comment on posts from your athletic community
-5. **Tag**: Use hashtags to categorize your posts (#basketball, #championship, etc.)
-
-### Key Features Walkthrough
-- **Post Creation**: Click the "+" icon to create posts with multiple images
-- **Tagging**: Add up to 10 tags per post for better discoverability
-- **Real-time Feed**: See new posts and interactions instantly
-- **Profile Building**: Complete your athlete profile with stats and achievements
 
 ## 🔧 Available Scripts
 
@@ -187,21 +146,3 @@ npm run lint         # Run ESLint
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- **Supabase** for the amazing backend-as-a-service platform
-- **shadcn/ui** for beautiful, accessible components
-- **Tailwind CSS** for the utility-first CSS framework
-- **React** ecosystem for modern web development tools
-
-## 📞 Support
-
-For support, email archana@example.com or join our Discord community.
-
----
-
-**Built with ❤️ for athletes, by athletes**
